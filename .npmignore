@@ -7,14 +7,14 @@ logs
 node_modules
 bower_components
 
-*.sublime*
-
 psd
 thumb
 sketch
 
-index.html
 pnpm-lock.yaml
 vite.config.ts
+src/vite-env.d.ts
 .eslintrc.cjs
-public
+
+src/stories
+.storybook
