@@ -11,10 +11,11 @@ interface DarkModeProviderProps {
     children: ReactNode;
 }
 
-export const useDarkMode = () => {
+export const useDarkMode = ():  DarkModeContextType => {
     const context = useContext(DarkModeContext);
     if (context === undefined) {
-        throw new Error('useDarkMode must be used within a DarkModeProvider');
+        console.warn('useDarkMode must be used within a DarkModeProvider');
+        return { isDarkMode: false, toggleDarkMode: () => {} };
     }
     return context;
 };

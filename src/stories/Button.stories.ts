@@ -38,5 +38,41 @@ type Story = StoryObj<typeof meta>;
 export const Solid: Story = {
     args: {
         children: 'Button',
+        variant: 'solid',
+    },
+};
+
+export const Light: Story = {
+    args: {
+        children: 'Button',
+        variant: 'light',
+    },
+};
+
+export const Outline: Story = {
+    args: {
+        children: 'Button',
+        variant: 'outline',
+    },
+};
+
+export const Flat: Story = {
+    args: {
+        children: 'Button',
+        variant: 'flat',
+    },
+};
+
+export const Ghost: Story = {
+    args: {
+        children: 'Button',
+        variant: 'ghost',
+    },
+};
+
+export const Glow: Story = {
+    args: {
+        children: 'Button',
+        variant: 'glow',
     },
 };
