@@ -2,9 +2,8 @@ import {Typo} from "../components/Typography/Typo.tsx";
 import type {Meta, StoryObj} from '@storybook/react';
 
 const meta = {
-    title: 'Components/Typography',
+    title: 'Components/Data Display/Typography',
     component: Typo,
-
     tags: ['autodocs'],
 
     argTypes: {
