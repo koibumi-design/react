@@ -1,7 +1,8 @@
 import React, {ButtonHTMLAttributes} from "react";
 import styles from './button.module.scss';
 import classNames from "classnames";
-import {useDarkMode} from "../DarkModeProvider/DarkModeProvider.tsx";
+
+import {useDarkMode} from "../../hooks/useDarkMode.ts";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     /**

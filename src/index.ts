@@ -11,4 +11,5 @@ export { Button } from './components/Button/Button'
 // # Hooks
 // ====================
 
-export { useDarkMode, DarkModeProvider } from './components/DarkModeProvider/DarkModeProvider'
+export { DarkModeProvider } from './components/DarkModeProvider/DarkModeProvider'
+export {useDarkMode} from "./hooks/useDarkMode.ts";
