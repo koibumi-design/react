@@ -18,6 +18,7 @@ export const Input: React.FC<InputProps> = (props) => {
         darkMode,
         color = 'normal',
         className,
+        placeholder,
         ...rest
     } = props;
     const mainClass = styles[`input-${variant}-${color}`];
@@ -29,16 +30,17 @@ export const Input: React.FC<InputProps> = (props) => {
             [styles['dark-mode']]: darkMode ?? globalDarkMode
         },
         {
-            [styles['fix-margin-top']]: props.label == ''
+            [styles['fix-margin-top']]: props.label == '' || placeholder == ''
         }
     )
 
     return (
         <label className={classList}>
-            {props.label}
+            {placeholder == '' ? '' : props.label}
             <input
                 className={styles.input}
                 disabled={disabled}
+                placeholder={placeholder != '' ? placeholder : props.label}
                 {...rest}
             />
         </label>
