@@ -1,18 +1,21 @@
-@import "src/sass/colors.scss";
+@import 'src/sass/colors.scss';
 
 @mixin button-common {
   padding: 0.625rem 1.25rem;
   font-size: 1.125rem;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   border: 2px solid;
-  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    color 0.3s ease;
   cursor: pointer;
 
   &:active {
     transform: scale(0.95);
   }
-
-};
+}
 
 .button-solid-primary {
   @include button-common;
@@ -105,7 +108,7 @@
   background-color: $color-primary-500;
   border-color: $color-primary-500;
   color: $color-primary-50;
-  box-shadow: 0 .125rem 1rem rgba($color-primary-500, 0.6);
+  box-shadow: 0 0.125rem 1rem rgba($color-primary-500, 0.6);
 
   &:hover {
     border-color: $color-primary-400;
@@ -128,8 +131,7 @@
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     background-color: rgba($color-slate-50, 0.5);
-    border-radius: .75rem;
-
+    border-radius: 0.75rem;
   }
 
   &.dark-mode {
