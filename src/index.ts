@@ -5,9 +5,11 @@ import './sass/global.scss';
 // ====================
 
 export { Button } from './components/Button/Button';
-export { Typo } from './components/Typography/Typo';
+export { ButtonGroup } from './components/ButtonGroup/ButtonGroup';
 export { Input } from './components/Input/Input';
+export { Link } from './components/Link/Link';
 export { SearchInput } from './components/SearchInput/SearchInput';
+export { Typo } from './components/Typography/Typo';
 
 // ====================
 // # Hooks
