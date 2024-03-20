@@ -2,11 +2,11 @@ import { ReactNode } from 'react';
 import { DarkModeProvider } from '../DarkModeProvider/DarkModeProvider.tsx';
 
 interface KoibumiProviderProps {
-  children: ReactNode;
+    children: ReactNode;
 }
 
 export const KoibumiProvider: React.FC<KoibumiProviderProps> = ({
-  children,
+    children,
 }) => {
-  return <DarkModeProvider>{children}</DarkModeProvider>;
+    return <DarkModeProvider>{children}</DarkModeProvider>;
 };
