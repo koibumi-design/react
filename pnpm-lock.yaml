@@ -73,6 +73,9 @@ devDependencies:
   eslint-plugin-storybook:
     specifier: ^0.8.0
     version: 0.8.0(eslint@8.57.0)(typescript@5.4.2)
+  prettier:
+    specifier: ^3.2.5
+    version: 3.2.5
   sass:
     specifier: ^1.72.0
     version: 1.72.0
